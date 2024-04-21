@@ -1,5 +1,10 @@
 Scala port of [Mini Ruccola (vm2gol-v2)](https://github.com/sonota88/vm2gol-v2) compiler
 
+Scalaでシンプルな自作言語のコンパイラを書いた  
+https://memo88.hatenablog.com/entry/mini-ruccola-compiler-scala
+
+---
+
 Scala version: see build.sbt
 
 ```
