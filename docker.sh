@@ -6,8 +6,8 @@ readonly IMAGE=mini-ruccola-scala:1
 
 cmd_build() {
   docker build \
-    --build-arg ARG_USER=$USER \
-    --build-arg ARG_GROUP=$(id -gn) \
+    --build-arg user=$USER \
+    --build-arg group=$(id -gn) \
     --progress=plain \
     -t $IMAGE .
 }

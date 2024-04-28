@@ -13,14 +13,14 @@ RUN apt-get update
 
 # --------------------------------
 
-ARG ARG_USER
-ARG ARG_GROUP
-ARG ARG_HOME=/home/${ARG_USER}
+ARG user
+ARG group
+ARG ARG_HOME=/home/${user}
 
-RUN groupadd ${ARG_USER} \
-  && useradd ${ARG_USER} -g ${ARG_GROUP} -m
+RUN groupadd ${user} \
+  && useradd ${user} -g ${group} -m
 
-USER ${ARG_USER}
+USER ${user}
 
 # --------------------------------
 
